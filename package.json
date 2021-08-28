@@ -1,6 +1,6 @@
 {
   "name": "ng-rx-websocket",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A robust websocket streaming service using RxJS",
   "keywords": [
     "Websocket",

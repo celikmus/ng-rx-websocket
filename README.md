@@ -1,9 +1,6 @@
-# NgRxWebsocket
+# Ng-Rx-Websocket
 
 ## Getting started
-
-Do we need to do one `npm install` or one in the back-end-app folder as well?
-What's the difference between `npm run` vs `npm run-script`
 
 - Build and run the back-end app:
   - `cd projects/back-end-test-app`
