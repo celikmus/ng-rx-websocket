@@ -1,0 +1,11 @@
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+  },
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 120,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "terminal.integrated.scrollback": 10000
+}

@@ -1,0 +1,44 @@
+{
+  "name": "backend-test-app",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -p tsconfig.json",
+    "format": "prettier --write '*.{yml,json,md}' '{src,test}/**/*'",
+    "start": "node 'dist/server.js'",
+    "start:dev": "tsc-watch -p tsconfig.json --onSuccess 'node --inspect dist/server.js'",
+    "test": "jest --preset ts-jest",
+    "prebuild": "npm run clean",
+    "prestart": "npm run build",
+    "prestart:dev": "npm run clean"
+  },
+  "dependencies": {
+    "fastify": "^3.20.2",
+    "fastify-websocket": "^3.2.1"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.4",
+    "@types/ws": "^7.4.7",
+    "husky": "^7.0.2",
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "tsc-watch": "^4.5.0",
+    "typescript": "~4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,yml,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

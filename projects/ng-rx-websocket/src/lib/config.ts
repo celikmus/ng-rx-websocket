@@ -1,0 +1,9 @@
+export const API_GATEWAY_PORT = 3500
+export const WS_HEARBEAT_TIMEOUT = 30000
+export const WS_RECONNECT_DELAY = 2000
+
+export enum SecurityConstants {
+  NG_RX_WS_CSRF_TOKEN = 'NG_RX_WS_CSRF_TOKEN',
+  SESSION_ID_TOKEN = 'SESSION_ID_TOKEN',
+  EXPIRY_STATUS_CODE = 4999,
+}
