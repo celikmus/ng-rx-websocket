@@ -11,6 +11,11 @@
   ],
   "author": "Mustafa Celik <celikmus@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com:celikmus/ng-rx-websocket.git"
+  },
+  "homepage": "https://github.com:celikmus/ng-rx-websocket#readme",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
